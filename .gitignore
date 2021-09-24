@@ -365,7 +365,10 @@ FodyWeavers.xsd
 
 # Python
 *.pyproj
+<<<<<<< Updated upstream
 /src/dist
 /src/imgstitch_cli.egg-info
 /src/build/lib
+=======
+>>>>>>> Stashed changes
 /src/.eggs
