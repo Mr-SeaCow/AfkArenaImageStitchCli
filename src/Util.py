@@ -1,16 +1,15 @@
 import cv2
 import numpy as np
 
-ext = ['.png', '.jpg', '.jpeg']
+extensions = ['.png', '.jpg', '.jpeg']
 def checkExtensions(fileName):
-    for v in ext:
-        if (v in fileName.lower()):
+    for ext in extensions:
+        if ext in fileName.lower():
             return True
     return False
 
 def getGrayscale(image):
     return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
 
 # This function crops out the top user border,
 # as well as the bottom factions choice. This makes
@@ -95,3 +94,15 @@ def stitchImages(imgTop, imgBottom, outputName, difference):
     outputImg = floodFillBackground(finalStitchedImage, seedPoints, difference)
 
     cv2.imwrite(outputName, outputImg)
+
+
+def hStitch(imgFileList, outputName):
+    imgList = []
+    for fileName in imgFileList:
+        imgList.append(cv2.imread(fileName))
+
+    hMin = min(img.shape[0] for img in imgList)
+      
+    imListResize = [cv2.resize(img, (int(img.shape[1] * hMin / img.shape[0]), hMin), interpolation = cv2.INTER_CUBIC) for img in imgList]
+
+    cv2.imwrite(outputName, cv2.hconcat(imListResize))

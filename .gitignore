@@ -365,3 +365,7 @@ FodyWeavers.xsd
 
 # Python
 *.pyproj
+/src/dist
+/src/imgstitch_cli.egg-info
+/src/build/lib
+/src/.eggs

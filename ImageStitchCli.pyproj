@@ -29,9 +29,22 @@
   <ItemGroup>
     <Folder Include="src\" />
     <Folder Include="TestImages\" />
+    <Folder Include="TestImages\StitchBattle\" />
+    <Folder Include="TestImages\StitchHero\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="readme.md">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="TestImages\Results.png" />
+    <Content Include="TestImages\StitchBattle\BattleResult.png" />
+    <Content Include="TestImages\StitchBattle\StitchBattles1.png" />
+    <Content Include="TestImages\StitchBattle\StitchBattles2.png" />
+    <Content Include="TestImages\StitchBattle\StitchBattles3.png" />
+    <Content Include="TestImages\StitchBattle\StitchBattles4.png" />
+    <Content Include="TestImages\StitchHero\HeroResult.png" />
+    <Content Include="TestImages\StitchHero\StitchHeroes1.png" />
+    <Content Include="TestImages\StitchHero\StitchHeroes2.png" />
     <Content Include="TestImages\TestImage1.png" />
     <Content Include="TestImages\TestImage2.png" />
   </ItemGroup>

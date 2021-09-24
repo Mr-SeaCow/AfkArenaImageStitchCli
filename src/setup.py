@@ -8,10 +8,13 @@ setup(
     install_requires=[
         'Click',
         'opencv-python',
-
+        'scikit-build',
+        'importlib; python_version == "3.9"',
+        'packaging'
     ],
     entry_points='''
         [console_scripts]
-        stitch=ImageStitchCli:stitch
+        stitchHeroes=ImageStitchCli:stitchHeroes
+        stitchBattles=ImageStitchCli:stitchBattles
     ''',
 )
