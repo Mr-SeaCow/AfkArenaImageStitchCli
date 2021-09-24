@@ -1,9 +1,0 @@
-ImageStitchCli.py
-Util.py
-setup.py
-imgstitch_cli.egg-info/PKG-INFO
-imgstitch_cli.egg-info/SOURCES.txt
-imgstitch_cli.egg-info/dependency_links.txt
-imgstitch_cli.egg-info/entry_points.txt
-imgstitch_cli.egg-info/requires.txt
-imgstitch_cli.egg-info/top_level.txt
